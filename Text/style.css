@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    background: radial-gradient(circle, #f48fb1 0%, #ce93d8 20%, #b2ebf2 40%, #a5d6a7 60%, #b39ddb 100%);
+    font-size: 6rem;
+    /* border: 1px solid black;
+    padding: 20px; */
+    /* background-clip: content-box;  border-box is default; content-box is around content, excludes padding; padding-box is includes padding (generally like border-box, difference is only seen when dashed thick border is used- experiment with 20px dashed border)*/
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: gradient 10s linear infinite alternate;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
